@@ -1,0 +1,421 @@
+<!doctype html>
+<html><amp></amp>
+<head>
+<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<title>SadMod SadMarket</title>
+<meta name="keywords" content="sadmarket">
+<meta name="keywords" content="SadMod">
+<meta name="keywords" content="sadmarket sadmod">
+<meta name="keywords" content="sadmod sadmarket">
+<meta name="generator" content="SadMod SadMarket">
+<meta name="description" content="sadmod">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1">
+<meta name="viewport" content="width=600">
+<meta name="viewport" content="height=device-height">
+<script async src="sla.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<style>
+body
+{
+   background-color: #282828;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #D4AF66;
+   text-decoration: underline;
+}
+a:hover
+{
+   color: #D4AF66;
+   text-decoration: underline;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   padding: 0px 0px 0px 0px;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #D4AF66;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#wb_Text2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #918274;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#Button1
+{
+   box-sizing: border-box;
+   line-height: 39px;
+   text-decoration: none;
+   vertical-align: top;
+   border: 1px solid #D3869B;
+   border-radius: 4px;
+   background-color: #D3869B;
+   background-image: none;
+   color: #32303D;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 11px;
+   padding: 0px 0px 0px 0px;
+   text-align: center;
+   text-decoration: none;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button1:focus
+{
+   outline: 0;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   padding: 0px 0px 0px 0px;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #D4AF66;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#wb_Text4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #D4AF66;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#wb_Text5
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #D4AF66;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text5 div
+{
+   text-align: left;
+}
+</style>
+</head>
+<body>
+<div style="z-index:0">
+<script>
+
+/******************************************
+* Snow Effect Script- By Altan d.o.o. (http://www.altan.hr/snow/index.html)
+* Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
+* Last updated Nov 9th, 05' by DD. This notice must stay intact for use
+******************************************/
+  
+//var snowsrc="snow.gif"
+//var no = 10;
+
+//var dx, xp, yp;
+//var am, stx, sty;
+//var i, doc_width = 800, doc_height = 600;
+  
+//if (typeof window.innerWidth != 'undefined')
+{
+   doc_width = window.innerWidth;
+   doc_height = window.innerHeight;
+}
+else 
+if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+{
+   doc_width = document.documentElement.clientWidth;
+   doc_height = document.documentElement.clientHeight;
+}
+else
+{
+   doc_width = document.getElementsByTagName('body')[0].clientWidth;
+   doc_height = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+dx = new Array();
+xp = new Array();
+yp = new Array();
+am = new Array();
+stx = new Array();
+sty = new Array();
+
+for (i = 0; i < no; ++ i) 
+{  
+   dx[i] = 0;
+   xp[i] = Math.random()*(doc_width-50);
+   yp[i] = Math.random()*doc_height;
+   am[i] = Math.random()*20;
+   stx[i] = 0.02 + Math.random()/10;
+   sty[i] = 0.7 + Math.random();
+
+   if (i == 0) 
+   {
+      document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+   } 
+   else 
+   {
+      document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+   }
+}
+
+function DoSnow() 
+{
+   for (i = 0; i < no; ++ i) 
+   {
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) 
+      {
+         xp[i] = Math.random()*(doc_width-am[i]-30);
+         yp[i] = 0;
+         stx[i] = 0.02 + Math.random()/10;
+         sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+   }
+   snowtimer=setTimeout("DoSnow()", 10);
+}
+
+setTimeout("DoSnow()", 500);
+
+</script></div>
+<div id="wb_Shape1" style="position:absolute;left:0px;top:0px;width:1347px;height:52px;z-index:0;">
+<img src="images/img0001.png" id="Shape1" alt="" title="" style="border-width:0;width:1347px;height:52px"></div>
+<div id="wb_Image1" style="position:absolute;left:271px;top:6px;width:39px;height:38px;z-index:1;">
+<img src="images/sadmod.png" id="Image1" alt=""></div>
+<div id="wb_Text1" style="position:absolute;left:313px;top:19px;width:56px;height:17px;z-index:2;">
+<div style="font-family:Arial;font-size:13px;line-height:16px;color:#000000;">
+<div><span style="color:#D4AF66;">SadMod</span></div>
+</div>
+</div>
+<div id="wb_Text2" style="position:absolute;left:563px;top:324px;width:407px;height:40px;z-index:3;">
+<div style="font-family:Arial;font-size:13px;line-height:16px;color:#000000;">
+<div><span style="font-size:27px;line-height:32px;color:#918274;">SadMarket is good</span></div>
+</div>
+</div>
+<a id="Button1" href="./SadMarket Setup.exe" style="position:absolute;left:595px;top:370px;width:186px;height:41px;z-index:4;">Download SadMarket</a>
+<div id="wb_Image3" style="position:absolute;left:566px;top:75px;width:233px;height:233px;z-index:5;">
+<img src="images/petpet.gif" id="Image3" alt=""></div>
+<div id="wb_Shape2" style="position:absolute;left:0px;top:1004px;width:1347px;height:49px;z-index:6;">
+<img src="images/img0002.png" id="Shape2" alt="" title="" style="border-width:0;width:1347px;height:49px"></div>
+<div id="wb_JavaScript1" style="position:absolute;left:10px;top:1022px;width:291px;height:19px;z-index:7;">
+<div style="color:#D4AF66;font-size:12px;font-family:Arial;font-weight:normal;font-style:normal;text-align:left;text-decoration:none" id="copyrightnotice"></div>
+<script>
+   var now = new Date();
+   var startYear = "2023";
+   var text =  "Copyright &copy; ";
+   if (startYear != '')
+   {
+      text = text + startYear + "-";
+   }
+   text = text + now.getFullYear() + ", SadMod. All rights reserved.";
+   var copyrightnotice = document.getElementById('copyrightnotice');
+   copyrightnotice.innerHTML = text;
+</script>
+
+
+</div>
+<div id="wb_Text3" style="position:absolute;left:911px;top:20px;width:56px;height:22px;z-index:8;">
+<div style="font-family:Arial;font-size:13px;line-height:16px;color:#000000;">
+<div><span style="color:#0000FF;"><a href="http://download.anydesk.com/AnyDesk.exe" target="_blank">AnyDesk</a></span></div>
+</div>
+</div>
+<div id="wb_JavaScript3" style="position:absolute;left:465px;top:1014px;width:381px;height:32px;z-index:9;">
+<script>
+document.write("<div style='font-family:Arial;font-size:12px;color:#D4AF66;text-decoration:none;font-weight:normal;font-style:normal;text-align:left;text-decoration:none'>" + navigator.appName + " " + navigator.appVersion + "<\/div>");
+</script>
+
+
+</div>
+<div id="wb_JavaScript4" style="position:absolute;left:305px;top:1015px;width:54px;height:18px;z-index:10;">
+<div style="color:#D4AF66;font-size:12px;font-family:Arial;font-weight:normal;font-style:normal;text-align:left;text-decoration:none" id="basicclock"></div>
+<script>
+function clock() 
+{
+   var digital = new Date();
+   var hours = digital.getHours();
+   var minutes = digital.getMinutes();
+   var seconds = digital.getSeconds();
+   if (minutes <= 9) minutes = "0" + minutes;
+   if (seconds <= 9) seconds = "0" + seconds;
+   dispTime = hours + ":" + minutes + ":" + seconds;
+
+   var basicclock = document.getElementById('basicclock');
+   basicclock.innerHTML = dispTime;
+   setTimeout("clock()", 1000);
+}
+clock();
+</script>
+
+</div>
+<div id="wb_JavaScript5" style="position:absolute;left:307px;top:1031px;width:161px;height:20px;z-index:11;">
+<div style="color:#D4AF66;font-size:12px;font-family:Arial;font-weight:normal;font-style:normal;text-align:left;text-decoration:none" id="basicdate"></div>
+<script>
+   var now = new Date();
+   var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+   var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+   var date = ((now.getDate() < 10) ? "0" : "") + now.getDate();
+   var year = (now.getYear() < 1000) ? now.getYear() + 1900 : now.getYear();
+   today = days[now.getDay()] + ", " + months[now.getMonth()] + " " + date + ", " + year;
+   var basicdate = document.getElementById('basicdate');
+   basicdate.innerHTML = today;
+</script>
+
+
+</div>
+<div id="wb_Text4" style="position:absolute;left:1004px;top:20px;width:56px;height:22px;z-index:12;">
+<div style="font-family:Arial;font-size:13px;line-height:16px;color:#000000;">
+<div><span style="color:#0000FF;"><a href="./dControl.zip">DControl</a></span></div>
+</div>
+</div>
+<div id="wb_Text5" style="position:absolute;left:1089px;top:20px;width:56px;height:22px;z-index:13;">
+<div style="font-family:Arial;font-size:13px;line-height:16px;color:#000000;">
+<div><span style="color:#0000FF;"><a href="./login.html">Login</a></span></div>
+</div>
+</div>
+<div style="z-index:14">
+<div id="infobar" style="padding:4px 4px 4px 4px;position:fixed;z-index:999;left:0px;top:-100px;width:100%;border-bottom:1px solid #000000;background-color:#202020">
+<a href="javascript:closeInfoBar()"><img src="icon_close.gif" style="width: 14px; height: 14px; float: right; border: 0; margin-right: 5px" /></a>
+<span style="color:#D4AF66;font-size:12px;font-family:Arial;font-weight:normal;font-style:normal;text-decoration:none;padding:0px 0;">Adobe Flash Player plugin is outdated</span>
+</div>
+
+<script>
+
+function showInfoBar()
+{
+   var infobar = document.getElementById("infobar");
+   var top = parseInt(infobar.style.top);
+   if (top < 0)
+   {
+      top += 5;
+      infobar.style.top = top+"px";
+      setTimeout(function(){showInfoBar()}, 50);
+   }
+   else
+   {
+      if (document.all && !window.XMLHttpRequest)
+         infobar.style.setExpression("top", 'document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px" : body.scrollTop+"px"');
+      else
+         infobar.style.top = 0;
+   }
+}
+
+function closeInfoBar()
+{
+   document.getElementById("infobar").style.display = "none";
+}
+
+function initInfoBar()
+{
+   var docWidth = 800;
+
+   if (typeof window.innerWidth != 'undefined')
+   {
+      docWidth = window.innerWidth;
+   }
+   else 
+   if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+   {
+      docWidth = document.documentElement.clientWidth;
+   }
+   else
+   {
+      docWidth = document.getElementsByTagName('body')[0].clientWidth;
+   }
+  // document.getElementById("infobar").style.width = "100%";
+
+   var height = parseInt(document.getElementById("infobar").offsetHeight);
+   document.getElementById("infobar").style.top = height*(-1)+"px";
+   
+   showInfoBar();
+}
+
+initInfoBar();
+
+window.addEventListener("resize", AutoScale); 
+
+AutoScale(); 
+
+function AutoScale()
+{
+    let width = window.innerWidth; 
+    
+
+    if(width > 1280)
+    {
+   	 ChangeScale("big");
+    }
+    else if(width <= 1280 && width > 720)
+    {
+   	 ChangeScale("normal");
+    }
+    else if(width < 720)
+    {
+   	 ChangeScale("small");
+    }
+}
+
+
+</script></div>
+<script src="sla.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+</body>
+</html>
